@@ -1,18 +1,5 @@
 <?php
-// Inclusion du fichier PDO
-$pdo = new PDO('mysql:host=localhost;dbname=ecommerce', 'root', '');
-$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
-// Création de la table des produits si elle n'existe pas
-$sql = "CREATE TABLE IF NOT EXISTS products (
-    productID INT AUTO_INCREMENT PRIMARY KEY,
-    product_name VARCHAR(255) NOT NULL,
-    product_description TEXT NOT NULL,
-    product_price DECIMAL(10, 2) NOT NULL,
-    product_image VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-)";
-$pdo->exec($sql);
+require 'database.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_product'])) {
     $productName = $_POST['product_name'];
@@ -36,22 +23,22 @@ if (in_array($imageFileType, $allowedTypes)) {
     // Déplacement de l'image
     if (move_uploaded_file($productImage['tmp_name'], $targetFile)) {
         echo "Image téléchargée avec succès.";
-                // Insertion dans la base de données
-                $stmt = $pdo->prepare("INSERT INTO products (product_name, product_description, product_price, product_image) 
-                                       VALUES (:product_name, :product_description, :product_price, :product_image)");
-                $stmt->bindParam(':product_name', $productName);
-                $stmt->bindParam(':product_description', $productDescription);
-                $stmt->bindParam(':product_price', $productPrice);
-                $stmt->bindParam(':product_image', $targetFile);
+        // Insertion dans la base de données
+        $stmt = $pdo->prepare("INSERT INTO products (product_name, product_description, product_price, product_image) 
+                                VALUES (:product_name, :product_description, :product_price, :product_image)");
+        $stmt->bindParam(':product_name', $productName);
+        $stmt->bindParam(':product_description', $productDescription);
+        $stmt->bindParam(':product_price', $productPrice);
+        $stmt->bindParam(':product_image', $targetFile);
 
-                if ($stmt->execute()) {
-                    echo "<p style='color: green;'>Produit ajouté avec succès !</p>";
-                } else {
-                    echo "<p style='color: red;'>Erreur lors de l'ajout du produit.</p>";
-                }
-            } else {
-                echo "<p style='color: red;'>Erreur lors du téléchargement de l'image.</p>";
-            }
+        if ($stmt->execute()) {
+            echo "<p style='color: green;'>Produit ajouté avec succès !</p>";
+        } else {
+            echo "<p style='color: red;'>Erreur lors de l'ajout du produit.</p>";
+        }
+    } else {
+        echo "<p style='color: red;'>Erreur lors du téléchargement de l'image.</p>";
+    }
         } else {
             echo "<p style='color: red;'>Type de fichier non valide. Seuls JPG, JPEG, PNG et GIF sont autorisés.</p>";
         }
@@ -60,13 +47,6 @@ if (in_array($imageFileType, $allowedTypes)) {
     }
 }
 ?>
-
-
-
-
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">

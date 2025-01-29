@@ -1,6 +1,6 @@
 
 <?php require_once 'header.php' ;
-require_once 'pdo.php';
+require_once 'database.php';
 
 // Récupérer les produits depuis la base de données
 $query = $pdo->query("SELECT * FROM products");
