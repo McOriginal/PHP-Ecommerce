@@ -1,0 +1,59 @@
+.container{
+    height: auto !important;
+    color: #4B164C;
+}
+
+.about-header {
+    background: url('https://source.unsplash.com/1600x500/?shopping') center/cover no-repeat;
+    padding: 100px 0;
+    background-color: #fff;
+}
+.h1{
+    font-size: 3.25rem;
+}
+.p{
+    font-size: 1.2rem;
+}
+.future-image{
+    display: flex;
+    justify-content: center;
+}
+.future{
+    width: 1200px;
+    justify-content: center;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+
+.stats-section {
+    background: #333;
+}
+
+.counter {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.presentation{
+    display: flex;
+    justify-content: center;
+}
+
+.slice1{
+    padding: 100px;
+    background: white;
+    width: 1200px;
+}

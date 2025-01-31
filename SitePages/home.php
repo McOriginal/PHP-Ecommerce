@@ -23,7 +23,7 @@ css_link("./assets/css/home.css")
         }
     </style>
 
-    <div class="row header-conteneur  bg-white">
+    <div class="row header-conteneur bg-white">
         <div class="col-sm-6 header-content">
             <h1 class="display-4">Bienvenue à Kilakodon</h1>
             <p class="lead">Découvrez une large gamme de produits soigneusement sélectionnés pour répondre à vos besoins et envies. Profitez d'une expérience d'achat simple, rapide et sécurisée.</p>
@@ -132,7 +132,8 @@ css_link("./assets/css/home.css")
         </button>
     </div>
 
-
+    
+    <!-- Hearder conteneu -->
     <div class="row header-conteneur mt-5 bg-white">
         <div class="col-sm-4 header-content">
             <img src="./assets/images/fruits.jpeg" alt="" srcset="">
