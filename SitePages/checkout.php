@@ -1,7 +1,7 @@
 <?php 
 
 
-if (isset($_POST['save_cart']) && !empty($_SESSION['panier'])) {
+if (!empty($_SESSION['panier'])) {
     $stmt = $pdo->prepare("INSERT INTO commandes (produit_id, quantite) VALUES (:produit_id, :quantite)");
 
     foreach ($_SESSION['panier'] as $id => $quantite) {
@@ -15,6 +15,9 @@ if (isset($_POST['save_cart']) && !empty($_SESSION['panier'])) {
     $_SESSION['panier'] = [];
 
     echo "<p>Commande enregistrée avec succès !</p>";
+}
+else{
+    echo "<p>Votre panier est vide.</p>";
 }
 
 

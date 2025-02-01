@@ -4,10 +4,10 @@
 
     <?php
     if (empty($_SESSION['panier'])) {
-        echo "<div class='alert alert-warning text-center'>Votre panier est vide.</div>";
+        echo "<div class='alert alert-warning text-center mt-5'>Votre panier est vide.</div>";
     } else {
         $total_general = 0;
-        echo "<h3 class='text-center'>🛒 Votre Panier</h3>";
+        echo "<h3 class='text-center mt-5 fw-bold'>🛒 Votre Panier</h3>";
         echo "<ul class='list-group'>";
 
         foreach ($_SESSION['panier'] as $id => $quantite) {
