@@ -37,23 +37,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_product'])) {
                 $stmt->bindParam(':product_image', $targetFile);
 
                 if ($stmt->execute()) {
-                    echo "<p style='color: green;'>Produit ajouté avec succès !</p>";
+                    echo "<div class='alert alert-success'>Produit ajouté avec succès !</div>";
                     header("Location: index.php?page=shop");
                     exit();
                 } else {
-                    echo "<p style='color: red;'>Erreur lors de l'ajout du produit.</p>";
+                    echo "<div class='alert alert-danger'>Erreur lors de l'ajout du produit.</div>";
                 }
 
             } else {
-                echo "<p style='color: red;'>Erreur lors du téléchargement de l'image.</p>";
+                echo "<div class='alert alert-danger'>Erreur lors du téléchargement de l'image.</div>";
             }
 
         } else {
-            echo "<p style='color: red;'>Type de fichier non valide. Seuls JPG, JPEG, PNG et GIF sont autorisés.</p>";
+            echo "<div class='alert alert-danger'>Type de fichier non valide. Seuls JPG, JPEG, PNG et GIF sont autorisés.</div>";
         }
 
     } else {
-        echo "<p style='color: red;'>Tous les champs sont obligatoires.</p>";
+        echo "<div class='alert alert-danger'>Tous les champs sont obligatoires.</div>";
     }
 }
 ?>
@@ -61,24 +61,24 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['add_product'])) {
 
 <div class="auth-container">
     <form class="auth-form" action="" method="POST" enctype="multipart/form-data">
-        <h1>Ajouter un Produit</h1>
+        <h1 class="add">Ajouter un Produit</h1>
         <div class="input-group">
             <i class="fas fa-tag"></i>
-            <input type="text" name="product_name" placeholder="Nom du produit" required>
+            <input type="text" class="form-control" name="product_name" placeholder="Nom du produit" required>
         </div>
         <div class="input-group">
             <i class="fas fa-align-left"></i>
-            <textarea name="product_description" placeholder="Description du produit" rows="3" required></textarea>
+            <textarea name="product_description" class="form-control" placeholder="Description du produit" rows="3" required></textarea>
         </div>
         <div class="input-group">
             <i class="fas fa-dollar-sign"></i>
-            <input type="number" name="product_price" placeholder="Prix" step="0.01" required>
+            <input type="number" name="product_price" class="form-control" placeholder="Prix" step="0.01" required>
         </div>
         <div class="input-group">
             <i class="fas fa-image"></i>
-            <input type="file" name="product_image" accept="image/*" required>
+            <input type="file" name="product_image" class="form-control" accept="image/*" required>
         </div>
-        <button type="submit" class="btn" name="add_product">Ajouter Produit</button>
+        <button type="submit" class="btn btn-primary" name="add_product">Ajouter Produit</button>
     </form>
 </div>
 

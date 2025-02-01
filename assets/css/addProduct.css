@@ -1,10 +1,10 @@
 .auth-container {
-    max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #F8E7F6;
+    max-width: 1000px;
+    /* background-color: #F8E7F6; */
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
 }
 
 .auth-form {
@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     background-color: #F5F5F5;
-    border: 1px solid #DD88CF;
+    /* border: 1px solid #DD88CF; */
     border-radius: 4px;
     padding: 10px;
     margin-bottom: 15px;
@@ -50,7 +50,7 @@
 }
 
 .btn {
-    background-color: #DD88CF;
+    background-color: #4B164C;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -63,4 +63,7 @@
 
 .btn:hover {
     background-color: #C078B8;
+}
+.add{
+    font-weight: 600;
 }
