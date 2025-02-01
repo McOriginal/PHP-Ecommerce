@@ -14,10 +14,15 @@
 
 <style>
     .card{
-    box-shadow: 0 6px 0px rgba(0, 0, 0, .86);
-    background-color: white !important;
-    border: none;
-}
+        box-shadow: 0 6px 0px rgba(0, 0, 0, .86);
+        background-color: white !important;
+        border: none;
+    }
+    
+    .product-card:hover {
+        transform: scale(1.05);
+        transition: 0.3s;
+    }
 </style>
 
 <!-- Bannière du site -->
@@ -133,7 +138,7 @@
 
         <?php if (!empty($products)): ?>
             <?php foreach ($products as $product): ?>
-                <div class="card">
+                <div class="card product-card">
                     <img src="<?php echo htmlspecialchars($product['product_image'])?>" alt="<?php echo htmlspecialchars($product['product_name']); ?>">
                     <h3><?php echo htmlspecialchars($product['product_name']); ?></h3>
                     <p><?php echo htmlspecialchars($product['product_description']); ?></p>

@@ -17,17 +17,23 @@
 
     <div class="future-image">
         <div class="row mt-5 future">
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <img src="./assets/images/pomme.jpeg" alt="" srcset="" class="img-fluid product-card">
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <img src="./assets/images/orange.jpeg" alt="Image d'accueil" class="img-fluid product-card">
             </div>
-            <div class="col-sm-3">
-                <img src="./assets/images/oignon.jpeg" alt="Image d'accueil" class="img-fluid product-card">
+            <div class="col-sm-2">
+                <img src="./assets/images/oignon_red.jpeg" alt="Image d'accueil" class="img-fluid product-card">
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <img src="./assets/images/auberge.jpeg" alt="Image d'accueil" class="img-fluid product-card">
+            </div>
+            <div class="col-sm-2">
+                <img src="./assets/images/orange_frais.jpeg" alt="Image d'accueil" class="img-fluid product-card">
+            </div>
+            <div class="col-sm-2">
+                <img src="./assets/images/poivres.jpeg" alt="Image d'accueil" class="img-fluid product-card">
             </div>
         </div>
     </div>
