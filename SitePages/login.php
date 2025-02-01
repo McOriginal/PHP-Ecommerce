@@ -42,6 +42,14 @@
         .navbar, footer{
             display: none;
         }
+        .auth-form{
+            width: 400px;
+        }
+        .auth-container{
+            display: flex;
+            align-items: center;
+            height: 100vh;
+        }
     </style>
     
 
