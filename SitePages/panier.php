@@ -1,6 +1,8 @@
 
 <div class="container">
-   
+   <style>
+        .container{height: 100vh;}
+   </style>
 
     <?php
     if (empty($_SESSION['panier'])) {
