@@ -46,6 +46,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         .navbar, footer{
             display: none;
         }
+        .auth-form{
+            max-width: 400px;
+        }
+        .auth-container{
+            height: 100%;
+        }
     </style>
 
         <div class="auth-container">
