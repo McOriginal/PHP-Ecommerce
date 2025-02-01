@@ -38,11 +38,12 @@
         <div class="row align-items-center slice1">
             <div class="col-md-6">
                 <h2>Qui sommes-nous ?</h2>
+                <hr class="divider">
                 <p>Nous sommes une boutique en ligne passionnée par la qualité et la satisfaction client. Depuis notre création, nous nous efforçons d'offrir les meilleurs produits avec un excellent service.</p>
                 <p>Notre mission est de rendre le shopping en ligne agréable, sûr et accessible à tous.</p>
             </div>
             <div class="col-md-6">
-                <img src="https://source.unsplash.com/500x300/?shopping,ecommerce" class="img-fluid rounded" alt="Notre équipe">
+                <img src="./assets/images/recolte.jpeg" class="img-fluid rounded" alt="Notre équipe">
             </div>
         </div>
     </section>
@@ -51,15 +52,15 @@
     <section class="stats-section text-center text-white py-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 counter-parent">
                     <h2 class="counter" data-target="5000">0</h2>
                     <p>Clients satisfaits</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 counter-parent">
                     <h2 class="counter" data-target="150">0</h2>
                     <p>Produits en stock</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 counter-parent">
                     <h2 class="counter" data-target="10">0</h2>
                     <p>Années d'expérience</p>
                 </div>
@@ -68,18 +69,18 @@
     </section>
 
     <!-- Section Contact -->
-    <section class="contact-section">
-        <div class="container">
-            <h2 class="h2">Contactez-Nous</h2>
+    <section class="contact-section my-5">
+        <div class="container contact">
+            <h2 class="h2 text-center my-3">Contactez-Nous</h2>
             <form action="#" method="post">
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Votre nom">
+                <div class="form-group py-2">
+                    <input type="text" class="form-control py-2" placeholder="Votre nom">
                 </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="Votre adresse email">
+                <div class="form-group py-2">
+                    <input type="email" class="form-control py-2" placeholder="Votre adresse email">
                 </div>
-                <div class="form-group">
-                    <textarea class="form-control" rows="3" placeholder="Votre message"></textarea>
+                <div class="form-group py-2">
+                    <textarea class="form-control py-2" rows="3" placeholder="Votre message"></textarea>
                 </div>
                 <button type="submit" class="btn btn-primary">Envoyer</button>
             </form>
@@ -94,7 +95,7 @@
                 <div class="carousel-item active">
                     <div class="testimonial">
                         <p>"Service client exceptionnel et produits de qualité !"</p>
-                        <h5>- Alice</h5>
+                        <h5>- Papejr</h5>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -106,7 +107,19 @@
                 <div class="carousel-item">
                     <div class="testimonial">
                         <p>"Meilleure boutique en ligne, toujours satisfaite de mes achats."</p>
-                        <h5>- Sophie</h5>
+                        <h5>- Mohamed Cissé</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <p>"Je vous recommande leurs services !"</p>
+                        <h5>- Fatoumata Traoré</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial">
+                        <p>"Plus que jamais d'être sûr de la qualité de leurs produits"</p>
+                        <h5>- Mr Soumbounou</h5>
                     </div>
                 </div>
             </div>
