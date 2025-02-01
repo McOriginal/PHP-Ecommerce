@@ -18,7 +18,7 @@
             header("Location: index.php?page=home");
             exit;
         } else {
-            $error = "Email ou mot de passe incorrect.";
+            $error_message = "Email ou mot de passe incorrect.";
         }
     }
 
