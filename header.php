@@ -26,7 +26,7 @@ require_once "functions.php";
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <div class="navbar-image-top">
-            <a class="navbar-brand" href="logo">Kilakodon Sugu</a>
+            <a class="navbar-brand" href="logo"><i class="fas fa-truck"></i>&nbsp;Kilakodon Sugu</a>
         </div>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
